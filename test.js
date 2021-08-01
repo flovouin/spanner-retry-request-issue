@@ -24,6 +24,8 @@ async function test() {
 
   const delay = new Date().getTime() - startTime;
   console.log(`Took ${delay} ms`);
+
+  await database.close();
 }
 
 test();
